@@ -1,0 +1,45 @@
+{
+  "name": "file-to-icon",
+  "version": "0.0.1",
+  "description": "Return a SVG file icon for a given file name or path.",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "serve": "./node_modules/http-server/bin/http-server -o /demo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./dist/main.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "demo/*",
+    "*.json",
+    "*.js",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haoranyu/file-to-icon"
+  },
+  "keywords": [
+    "icon",
+    "vscode",
+    "javascript",
+    "file-icon"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "eslint": "^7.12.1",
+    "eslint-webpack-plugin": "^2.1.0",
+    "http-server": "^0.12.3",
+    "vscode-icons": "git+ssh://git@github.com/vscode-icons/vscode-icons.git",
+    "vscode-icons-js": "^11.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "author": "Haoran Yu",
+  "license": "MIT"
+}
