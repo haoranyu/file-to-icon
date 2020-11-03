@@ -6,6 +6,14 @@ const CopyPlugin = require('copy-webpack-plugin')
 const moduleVal = {
   rules: [
     {
+      test: /\.(svg)$/,
+      use: [
+        {
+          loader: 'url-loader'
+        }
+      ]
+    },
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       use: {
@@ -26,7 +34,6 @@ const config = [
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist')
     },
-    module: moduleVal,
     plugins: [
       new ESLintPlugin({
         files: './src/*'
@@ -35,13 +42,14 @@ const config = [
         patterns: [
           {
             from: path.resolve(__dirname, 'node_modules/vscode-icons/icons/*.svg'),
-            to: path.resolve(__dirname, 'dist/icons/'),
+            to: path.resolve(__dirname, 'src/icons/'),
             toType: 'dir',
             context: './node_modules/vscode-icons/icons/'
           },
         ],
       }),
-    ]
+    ],
+    module: moduleVal,
   },
 ];
 

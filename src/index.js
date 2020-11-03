@@ -4,6 +4,11 @@ import {
   getIconForOpenFolder,
 } from 'vscode-icons-js'
 
+function importAll (r) {
+  r.keys().forEach(r);
+}
+importAll(require.context('./icons/', true, /\.svg$/));
+
 const iconPath = './icons/'
 
 const FileIcon = function (name) {
