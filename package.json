@@ -1,6 +1,6 @@
 {
   "name": "file-to-icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Return a SVG file icon for a given file name or path.",
   "scripts": {
     "build": "webpack --mode=production",
@@ -11,7 +11,6 @@
   "files": [
     "dist/*",
     "src/*",
-    "demo/*",
     "*.json",
     "*.js",
     "*.md"
@@ -35,7 +34,7 @@
     "eslint": "^7.12.1",
     "eslint-webpack-plugin": "^2.1.0",
     "http-server": "^0.12.3",
-    "vscode-icons": "git+ssh://git@github.com/vscode-icons/vscode-icons.git",
+    "vscode-icons": "git+ssh://git@github.com:vscode-icons/vscode-icons.git",
     "vscode-icons-js": "^11.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"

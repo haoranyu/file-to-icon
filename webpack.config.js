@@ -36,7 +36,8 @@ const config = [
           {
             from: path.resolve(__dirname, 'node_modules/vscode-icons/icons/*.svg'),
             to: path.resolve(__dirname, 'dist/icons/'),
-            toType: 'dir'
+            toType: 'dir',
+            context: './node_modules/vscode-icons/icons/'
           },
         ],
       }),
